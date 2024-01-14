@@ -49,7 +49,12 @@ opt.updatetime = 250
 -- when cursor reaches end/beginning of line
 opt.whichwrap:append "<>[]hl"
 
+-- spell checking
+opt.spell = true
+opt.spelllang = "en_us,pt_br"
+
 g.mapleader = " "
+g.maplocalleader = ","
 
 -- disable some default providers
 for _, provider in ipairs { "node", "perl", "python3", "ruby" } do
